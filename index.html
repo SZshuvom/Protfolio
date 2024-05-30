@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/e3344c576e.js" crossorigin="anonymous"></script>
+    <!-- <style>
+      /* Add some basic styles for the tabs */
+      .tab-contains {
+        display: none;
+      }
+      .active-tab {
+        display: block;
+      }
+      .active-link {
+        font-weight: bold;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logosz.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Designer &COPY;</p>
+          <h1>Hi, It's me <br> <span>Shuvom SzZ.</span> <br />I'm Frontend Devoloper.</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ==================about============= -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/mee.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Shuvom Sz, a web developer with a degree in Computer Science
+              and Engineering from IUBAT. I specialize in creating dynamic,
+              user-friendly web applications using HTML, CSS, JavaScript, React,
+              and Node.js. Passionate about continuous learning and innovation,
+              I am dedicated to delivering efficient and impactful web
+              solutions. <br /><br />
+              Outside of work, I enjoy playing guitar and exploring new music.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+              <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            </div>
+            <div class="tab-contains active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces as a beginner</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li><span>App Development</span><br />Building Android apps</li>
+              </ul>
+            </div>
+            <div class="tab-contains" id="experience">
+              <ul>
+                <li><span>2024-Current</span><br />HTML/CSS Design</li>
+                <li><span>2023-Start-Desinging</span><br />Web app Development</li>
+                <li><span>Internship</span>Finished my Internship from RightBrain Solution Ltd<br /></li>
+              </ul>
+            </div>
+            <div class="tab-contains" id="education">
+              <ul>
+                <li><span>2014</span><br />I completed my SSC from Cumilla Modern High School.</li>
+                <li><span>2015-2016</span><br />Completed HSC from MileStone College</li>
+                <li><span>Project</span><br />My own project name is Online Pediatric Health and Medicine Portal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code" aria-hidden="true" style="font-size: 40px;"></i>
+            <h2>Web Design</h2>
+            <p>Web design involves creating visually appealing and user-friendly websites. Key elements include layout, color scheme, typography, imagery, and navigation. Effective web design ensures that a site is attractive, easy to use, responsive across devices, and accessible to all users. It plays a crucial role in establishing a strong online presence and engaging visitors</p>
+            <a href="#">Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop" aria-hidden="true" style="font-size: 40px;"></i>
+            <h2>UI/UX Design</h2>
+            <p>UI/UX design focuses on creating seamless and enjoyable user experiences for digital products. UI (User Interface) design involves crafting visually appealing and intuitive interfaces, while UX (User Experience) design ensures the product is easy to use and meets user needs. Together, they aim to enhance user satisfaction, improve usability, and create engaging interactions.</p>
+            <a href="#">Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Apps Design</h2>
+            <p>App design involves creating user-friendly and visually appealing mobile applications. It encompasses both UI design, which focuses on the app's look and feel, and UX (User Experience) design, which ensures the app is easy to navigate.Effective app design aims to  efficient experiences on mobile devices.</p>
+            <a href="#">Learn more<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></i></a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- ===========Portfolio=============== -->
+    <div id="protfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Screenshot 2024-03-31 231419.png">
+            <div class="layer">
+              <h3>Web Based Application</h3>
+              <p>This is a Online Pediatr Health And Medicine Portal.Where people can get Search and view healthcare professionals' profiles.Also purchase product from the website .Ensure accessibility and mobile optimization.Mobile-friendly layout for seamless browsing.
+                &copy;
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Admin backnd.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontains = document.getElementsByClassName("tab-contains");
+      function opentab(event, tabname) {
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (var tabcontain of tabcontains) {
+          tabcontain.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
