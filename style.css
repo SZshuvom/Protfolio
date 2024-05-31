@@ -60,8 +60,8 @@ nav ul li a:hover::after {
   width: 100%;
 }
 .header-text {
-  margin: 3%;
-  font-size: 30px;
+  margin: 4%;
+  font-size: 50px;
 }
 .header-text h1 {
   font-size: 60px;
@@ -401,6 +401,9 @@ form .btn2{
 .copyright i{
   color:#ff4540;
 }
+.copyright h3{
+  color:#ff4540;
+}
 
 .row{
   display: flex;
@@ -410,7 +413,7 @@ form .btn2{
 /* ============css for small screen============= */
 
 
-@media only sereen and (max-with: 600px){
+/* @media only sereen and (max-with: 600px){
   #header{
     background-image: url(images/pritom.jpg);
   }
@@ -425,4 +428,4 @@ form .btn2{
 
 }
 
-  
+   */
