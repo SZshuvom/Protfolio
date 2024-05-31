@@ -30,6 +30,9 @@ nav {
   flex-wrap: wrap;
   
 }
+/* .container nav li{
+  height: -60px;
+} */
 .logo {
   width: 175px;
 }
