@@ -241,17 +241,21 @@ color:#980b48;
   
 }
 .Screen-shrt img{
-  width: 400px;
+  width: 300px ;
   margin-top: 40px;
   transition: transform 0.5s;
+  padding: 10px;
+  display: inline;
   
 }
 .Screen-shrt h1{
   margin-top: 20px;
   text-align: center;
   font-size: 45px;
-  border: 2px solid #980b48; 
+  border:#980b48 solid;
+  border-style:outset;
   padding: 10px;
+
 }
 
 /* .services-list div a svg:hover{
@@ -343,7 +347,7 @@ color:#980b48;
   transition:background 0.5s ;
 }
 .btn:hover{
-  background: #ff4540;
+  background: #980b48;
 }
 /* ================contact================== */
 .contact-left{
