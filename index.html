@@ -19,11 +19,45 @@
       }
     </style> -->
   </head>
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Include the updated CSS here */
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-list">
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#protfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#interest">Interest</a></li>
+    </ul>
+  </nav>
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById('nav-list');
+      navList.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
   <body>
     <div id="header">
       <div class="container">
-        <nav>
-          <img src="images/pera pera pera.png" class="logo" />
+        <img src="images/pera pera pera.png" class="logo" />
+        <!-- <nav>
           <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -32,7 +66,7 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#interest">Interes</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <div class="header-text">
           <p>Web Devoloper &COPY;</p>
           <h1>Hi, I'm <br> <span>Shuvom SzZ.</span> <br/>I'm Frontend Devoloper.</h1>
@@ -149,17 +183,17 @@
           <div class="work">
             <!-- <img src="images/cartoon-sleeping-baby-illustration-vector-removebg-preview.png"> -->
             <div class="layer">
-              <h3>Web Based Application</h3>
-              <h4><span>Online Pediatr Health And Medicine Portal.</span> </h4>
+              <h3>Web Based Application</h3><br>
+              <h4><span>Online Pediatr Health And Medicine Portal.</span> </h4><br>
               <p> Where people can Search and view healthcare professionals' profiles. <br> Also purchase product from the website .Ensure accessibility and mobile optimization. <br> Mobile-friendly layout for seamless browsing.
-                &copy;
+                &copy; <br>
                 <h4>Analyzing the Impact of Supervised Classification Techniques on
 
-                  Shop Sales Effectiveness using machine learning</h4>
+                  Shop Sales Effectiveness using machine learning</h4><br>
               <p>To enhance retail sales performance, <br> This study explores the impact of various supervised classification techniques—such as Logistic Regression, Decision Trees, and Random Forests—on sales data, aiming to optimize customer service and sales strategies using machine learning.&COPY;</p>
-              <h4>Guitar Shop Web-Application</h4>
-            <p>From that application <br> Any types of guitar can be buy and also get information.&COPY;</p>
-              <h4>VueLight</h4>
+              <h4>Guitar Shop Web-Application</h4><br>
+            <p>From that application <br> Any types of guitar can be buy and also get information.&COPY;</p><br>
+              <h4>VueLight</h4><br>
             <p>Just make a website <br> Where there are one light and a button <br> Make for fun and get to learn some new thing .&COPY;</p>
               
             </div>

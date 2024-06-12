@@ -38,12 +38,96 @@ html{
 .container {
   padding: 10px 10%;
 }
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0; 
+  right: 150px; 
+  padding: 10px; 
+  z-index: 1000; 
+  font-weight: 500px;
+} */
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  right: 150px;
+  padding: 10px;
+  z-index: 1000;
+  font-weight: 500;
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  background: #ff007f;
+  display: block;
+  height: 2px;
+  width: 25px;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    right: 10px;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #ff007f;
+    position:relative;
+    top: 10px;
+    right: 40;
+    padding: 60px;
+    border-radius: 10px;
+    
+  }
+  nav ul li {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+ 
+ 
+  nav ul.show {
+    display: flex;
+    transition:5s;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
 .logo {
   width: 175px;
 }
@@ -326,7 +410,7 @@ nav ul li a:hover::after {
   color: #980b48;
 }
 .work-list{
-  display: grid;
+  display:flex;
   gap: 40px;
 }
 .work{
@@ -389,6 +473,7 @@ nav ul li a:hover::after {
 .btn:hover{
   background: #980b48;
 }
+
 /* ================contact================== */
 .contact-left{
   flex-basis: 35%;
@@ -646,3 +731,4 @@ form .btn2{
       transform: none;
     }
   }
+  
