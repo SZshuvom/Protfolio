@@ -110,7 +110,7 @@ nav ul li a:hover::after {
   font-size: 20px;
 } 
 .about-col-2 p{
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman', serif";
 }
 .sub-title {
   font-size: 60px;
@@ -144,12 +144,12 @@ nav ul li a:hover::after {
 .tab-contains ul li {
   list-style: none;
   margin: 10px 0;
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman', serif";
 }
 .tab-contains ul li span {
   color: #b54769;
   font-size: 14px;
-  font-family: "Times New Roman", serif;
+  font-family: "Times New Roman', serif";
 }
 .tab-contains {
   display: none;
@@ -157,6 +157,7 @@ nav ul li a:hover::after {
 .tab-contains.active-tab {
   display: block;
 }
+
 /* =============services===========+ */
 #services{
   padding: 30px 0;
@@ -212,6 +213,7 @@ nav ul li a:hover::after {
   justify-content: center;
   column-gap: 10px;
 }
+
 .services-list div a svg{
   height: 17px;
 }
@@ -235,7 +237,7 @@ nav ul li a:hover::after {
   background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
   transition: all 0.3s ease-in-out;
 }
-.Screen-shrt img{
+/* .Screen-shrt img{
   width: 300px ;
   margin-top: 40px;
   transition: transform 0.5s;
@@ -253,6 +255,70 @@ nav ul li a:hover::after {
 .services-list div:hover{
   background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
   transform: translateY(-10px);
+} */
+.Screen-shrt img {
+  width: 300px;
+  margin-top: 40px;
+  transition: transform 0.5s; 
+  padding: 10px;
+  display: inline;
+}
+
+
+.Screen-shrt img:hover {
+  transform: scale(1.1); 
+}
+
+
+/* .Screen-shrt h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 45px;
+  border: #980b48 solid;
+  border-style: outset;
+  padding: 10px;
+} */
+.Screen-shrt h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 45px;
+  border: #980b48 solid;
+  border-style: outset;
+  padding: 10px;
+  transition: transform 0.5s, color 0.5s; 
+}
+
+
+.Screen-shrt h1:hover {
+  transform: scale(1.1); 
+  color: #980b48; 
+}
+
+
+.services-list div:hover {
+  background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
+  transform: translateY(-10px); 
+}
+.Screen-shrt h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 45px;
+  border: #980b48 solid;
+  border-style: outset;
+  padding: 10px;
+  transition: transform 0.5s, color 0.5s; 
+}
+
+.Screen-shrt h1:hover {
+  transform: scale(1.1); 
+  color: #980b48; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .Screen-shrt h1 {
+    font-size: 30px; 
+  }
 }
 /* ==============portfolio================ */
 #protfolio{
@@ -330,6 +396,33 @@ nav ul li a:hover::after {
   justify-content: center;
   align-items: center;
 }
+.contact-left h1:hover {
+  transform: scale(1.1); 
+  color: #980b48; 
+}
+.contact-left p:hover {
+  transform: scale(1.1); 
+  color: #980b48; 
+}
+.contact-left p {
+  transition: transform 0.5s;
+}
+
+/* Hover effect for computer screens */
+@media (min-width: 768px) {
+  .contact-left p:hover {
+    transform: scale(1.1); 
+    color: #980b48; 
+  }
+}
+
+/* Hover effect for mobile screens */
+@media (max-width: 767px) {
+  .contact-left p:hover {
+    transform: none; 
+    color: #980b48; 
+  }
+}
 .contact-right{
   flex-basis: 60%;
 }
@@ -405,7 +498,22 @@ form .btn2{
   justify-content: center;
   align-items: center;
 }
+.hover-effect {
+  color: #980b48;
+  transition: color 0.3s, transform 0.3s;
+}
 
+.hover-effect:hover {
+  transform: scale(1.1); 
+  color: #ff007f; 
+}
+
+/* Responsive hover effect adjustments */
+@media (max-width: 767px) {
+  .hover-effect:hover {
+    transform: none; 
+  }
+}
 /* ============css for small screens============= */
 @media (max-width: 768px) {
   .container {
@@ -508,6 +616,33 @@ form .btn2{
 }
 @media only screen and (max-width: 400px) {
   #header {
-    background-size: cover; /* Adjust background size to cover the entire container */
+    background-size: cover; 
     background-position: 500px 900px;}
+  }
+  .hover-effect {
+    color: #980b48;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hover-effect:hover {
+    background-color: #980b48; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+    padding: 5px 10px; /* Add padding on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: scale(1.1); /* Slightly increase size on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .hover-effect {
+      font-size: 14px;
+    }
+  
+    .hover-effect:hover {
+      transform: none;
+    }
   }
