@@ -3,6 +3,21 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: #fff;
+  font-family: "Kalam", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
   font-family: "Kalam", "sans-serif";
   box-sizing: border-box;
 }
@@ -28,11 +43,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
-/* .container nav li{
-  height: -60px;
-} */
 .logo {
   width: 175px;
 }
@@ -99,7 +110,7 @@ nav ul li a:hover::after {
   font-size: 20px;
 } 
 .about-col-2 p{
-  font-family: "Times New Roman', serif";
+  font-family: "Times New Roman", serif;
 }
 .sub-title {
   font-size: 60px;
@@ -133,12 +144,12 @@ nav ul li a:hover::after {
 .tab-contains ul li {
   list-style: none;
   margin: 10px 0;
-  font-family: "Times New Roman', serif";
+  font-family: "Times New Roman", serif;
 }
 .tab-contains ul li span {
   color: #b54769;
   font-size: 14px;
-  font-family: "Times New Roman', serif";
+  font-family: "Times New Roman", serif;
 }
 .tab-contains {
   display: none;
@@ -148,21 +159,19 @@ nav ul li a:hover::after {
 }
 /* =============services===========+ */
 #services{
-  padding: 30px, 0;
-  
+  padding: 30px 0;
 }
 .services-list{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid: gap 40px;
+  gap: 40px;
   margin-top: 50px;
-  font-family: "Times New Roman', serif";
-  
+  font-family: "Times New Roman", serif;
 }
 .services-list p{
   padding: 10px;
   text-align: justify;
-  font-family:"Times New Roman', serif";
+  font-family:"Times New Roman", serif;
 }
 .services-list div{
   background: #262626;
@@ -177,16 +186,14 @@ nav ul li a:hover::after {
   font-size: 50px;
   margin-bottom: 30px;
 }
-
 .sub-title{
-color:#980b48;
+  color:#980b48;
 }
-
 .services-list div h2{
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
-  font-family: "Times New Roman', serif";
+  font-family: "Times New Roman", serif;
 }
 .services-list div a{
   font-family: Arial, Helvetica, sans-serif;
@@ -204,18 +211,10 @@ color:#980b48;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
-  
-  
-  
-  
 }
-
 .services-list div a svg{
- height: 17px;
-  
-  
+  height: 17px;
 }
-
 .services-list div a:hover{
   font-family: Arial, Helvetica, sans-serif;
   text-decoration:none;
@@ -234,11 +233,7 @@ color:#980b48;
   column-gap: 10px;
   fill: white;
   background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
-
   transition: all 0.3s ease-in-out;
-  
-  
-  
 }
 .Screen-shrt img{
   width: 300px ;
@@ -246,7 +241,6 @@ color:#980b48;
   transition: transform 0.5s;
   padding: 10px;
   display: inline;
-  
 }
 .Screen-shrt h1{
   margin-top: 20px;
@@ -255,28 +249,19 @@ color:#980b48;
   border:#980b48 solid;
   border-style:outset;
   padding: 10px;
-
 }
-
-/* .services-list div a svg:hover{
-  X
-} */
 .services-list div:hover{
   background: radial-gradient(circle at 10% 20%, rgb(255, 19, 120) 0%, rgb(0, 0, 0) 90.5%);
   transform: translateY(-10px);
-
 }
-/* ==============protfolio================ */
+/* ==============portfolio================ */
 #protfolio{
   padding: 50px 0;
   color: #980b48;
-  
 }
 .work-list{
   display: grid;
-  
-  grid: gap 40px;
-  
+  gap: 40px;
 }
 .work{
   border-radius: 15px;
@@ -288,7 +273,6 @@ color:#980b48;
   border-radius: 20px;
   display: block;
   transition: transform 0.5s;
-
 }
 .work-list h3{
   color: #980b48;
@@ -296,24 +280,16 @@ color:#980b48;
 }
 .work-list p{
   color: #fff;
-  font-family: "Times New Roman', serif";
+  font-family: "Times New Roman", serif;
   font-weight: 500;
 }
 .layer{
   width: 100%;
-  height: 0%;
-  background: linear-gradient(rgba(0,0,0,0.6, ), #ff4540);
-  border-radius: 20px; 
-  /* position:absolute;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  align-items: center;
-  justify-content: column;
-  padding: 0 40px;
-  text-align: center; */
-  transition: hight 0.5s;
-  font-family: "Times New Roman', serif";
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), #ff4540);
+  border-radius: 20px;
+  transition: height 0.5s;
+  font-family: "Times New Roman", serif;
 }
 .layer a{
   margin-top: 20px;
@@ -329,11 +305,9 @@ color:#980b48;
 }
 .work:hover img{
   transform: scale(1.1);
-
 }
 .work:hover .layer{
   height: 100%;
-
 }
 .btn{
   display: block;
@@ -386,7 +360,6 @@ color:#980b48;
 .btn.btn2{
   display: inline-block;
   background: #980b48;
-  
 }
 .btn.btn2:hover{
   display: inline-block;
@@ -427,29 +400,103 @@ form .btn2{
 .copyright h3{
   color:#980b48;
 }
-
 .row{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* ============css for small screen============= */
-
-
-/* @media only sereen and (max-with: 600px){
-  #header{
-    background-image: url(images/pritom.jpg);
+/* ============css for small screens============= */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px 5%;
   }
-  .
-  .header-text{
-    margin-top: 100%;
+  .header-text {
+    margin: 20% 4%;
     font-size: 30px;
   }
+  .header-text h1 {
+    font-size: 40px;
+    margin: 10px;
+  }
+  nav ul li {
+    margin: 5px 10px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  .about-col-1, .about-col-2 {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+  .about-col-1 img {
+    margin: 0;
+  }
+  .tab-links {
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+  .Screen-shrt img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .Screen-shrt h1 {
+    font-size: 30px;
+    padding: 5px;
+  }
+  .work-list h3 {
+    font-size: 40px;
+  }
+  .btn {
+    padding: 10px 30px;
+  }
+  form input, form textarea {
+    font-size: 16px;
+  }
 }
-.header-text h1{
-  font-size: 30px;
 
+@media (max-width: 480px) {
+  .header-text {
+    margin: 30% 4%;
+    font-size: 20px;
+  }
+  .header-text h1 {
+    font-size: 30px;
+  }
+  nav ul li {
+    margin: 5px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  .about-col-1 img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .services-list div {
+    padding: 20px;
+  }
+  .services-list div h2 {
+    font-size: 20px;
+  }
+  .services-list div a {
+    font-size: 14px;
+    width: 100px;
+    height: 25px;
+  }
+  .Screen-shrt h1 {
+    font-size: 25px;
+  }
+  .work-list h3 {
+    font-size: 30px;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
+  form input, form textarea {
+    font-size: 14px;
+  }
 }
-
-   */
