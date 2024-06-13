@@ -130,6 +130,24 @@ nav ul li a {
 
 .logo {
   width: 175px;
+  transition: transform 0.5s, box-shadow 0.5s; 
+}
+
+.logo:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.logo {
+  width: 100%;
+  max-width: 175px;
+  transition: transform 0.5s, box-shadow 0.5s; 
+}
+
+@media (min-width: 600px) {
+  .logo:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
 }
 nav ul li {
   display: inline-block;
