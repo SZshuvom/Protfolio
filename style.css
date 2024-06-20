@@ -491,7 +491,27 @@ nav ul li a:hover::after {
 .btn:hover{
   background: #980b48;
 }
+@media (max-width: 768px) {
+  .work-list {
+    flex-direction: column; /* Stack items vertically */
+  }
 
+  .work {
+    margin-bottom: 30px;
+  }
+
+  .work-list h3 {
+    font-size: 40px; /* Reduce font size for smaller screens */
+    text-align: center; /* Center align headings */
+  }
+
+  .layer {
+    position: relative; /* Reset position for layer */
+    height: auto; /* Reset height */
+    padding: 10px; /* Adjust padding */
+    text-align: center; /* Center text */
+  }
+}
 /* ================contact================== */
 .contact-left{
   flex-basis: 35%;
